@@ -8,7 +8,8 @@ from docutils.parsers.rst import Directive, directives
 from docutils import nodes
 from sphinx.util import logging
 
-__version__ = "0.0.10"
+#__version__ = "0.0.10"
+__version__ = "0.0.11"
 
 logger = logging.getLogger(__name__)
 
