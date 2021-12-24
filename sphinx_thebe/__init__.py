@@ -142,6 +142,16 @@ def update_thebe_context(app, doctree, docname):
         predefinedOutput: true
     }}
     </script>
+    <script type="text/x-thebe-config">
+      {{
+        requestKernel: true,
+        binderOptions: {{
+          repo: "matplotlib/ipympl",
+          ref: "0.6.1",
+          repoProvider: "github",
+        }},
+      }}
+    </script>    
     """
 
     doctree.append(nodes.raw(text=thebe_html_config, format="html"))
